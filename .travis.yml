@@ -1,12 +1,12 @@
 language: node_js
 node_js:
-  - '7'
+  - '10'
+  - '8'
   - '6'
-  - '4'
 cache:
   directories:
     - $HOME/.npm
-    - node_modules
-before_install: 'npm install --global npm'
-before_script: 'npm prune'
+before_install:
+  - npm install --global npm@6.4.1
+  - npm --version
 after_script: 'cat ./coverage/lcov.info | ./node_modules/.bin/coveralls'
