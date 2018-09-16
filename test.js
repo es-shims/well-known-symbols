@@ -4,6 +4,7 @@ import {isWellKnown, getLabel} from '.'
 
 const names = [
   'iterator',
+  'asyncIterator',
   'match',
   'replace',
   'search',
