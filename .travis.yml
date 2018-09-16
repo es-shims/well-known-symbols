@@ -9,4 +9,4 @@ cache:
 before_install:
   - npm install --global npm@6.4.1
   - npm --version
-after_script: 'cat ./coverage/lcov.info | ./node_modules/.bin/coveralls'
+after_success: npx codecov --file=./coverage/lcov.info
