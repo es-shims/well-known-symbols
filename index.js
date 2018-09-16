@@ -3,6 +3,7 @@
 // https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Symbol#Well-known_symbols
 const WELL_KNOWN = new Map([
   [Symbol.iterator, 'Symbol.iterator'],
+  [Symbol.asyncIterator, 'Symbol.asyncIterator'],
   [Symbol.match, 'Symbol.match'],
   [Symbol.replace, 'Symbol.replace'],
   [Symbol.search, 'Symbol.search'],
