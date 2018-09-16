@@ -1,6 +1,6 @@
 import test from 'ava'
 
-import { isWellKnown, getLabel } from './'
+import {isWellKnown, getLabel} from '.'
 
 const names = [
   'iterator',
@@ -24,7 +24,9 @@ wellKnown.title = (_, name, expected) => `Symbol.${name} is ${expected ? 'well k
 const label = (t, name, expected) => {
   t.is(getLabel(Symbol[name]), expected)
 }
-label.title = (_, name, expected) => `Label of Symbol.${name} is ${expected === undefined ? 'undefined' : `'${expected}'`} (on this platform)`
+label.title = (_, name, expected) => {
+  return `Label of Symbol.${name} is ${expected === undefined ? 'undefined' : `'${expected}'`} (on this platform)`
+}
 
 for (const name of names) {
   test(wellKnown, name, Symbol[name] !== undefined)
