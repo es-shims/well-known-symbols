@@ -10,10 +10,8 @@
     "node": ">=4"
   },
   "scripts": {
-    "coverage": "nyc npm test",
     "lint": "as-i-preach",
-    "test": "ava",
-    "posttest": "as-i-preach"
+    "test": "npm -s run lint && nyc ava"
   },
   "repository": {
     "type": "git",
