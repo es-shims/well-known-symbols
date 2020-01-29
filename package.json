@@ -3,8 +3,10 @@
   "version": "2.0.0",
   "description": "Check whether a symbol is well-known",
   "main": "index.js",
+  "types": "index.d.ts",
   "files": [
-    "index.js"
+    "index.js",
+    "index.d.ts"
   ],
   "engines": {
     "node": ">=6"
