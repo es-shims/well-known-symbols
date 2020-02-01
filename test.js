@@ -1,6 +1,6 @@
 import test from 'ava'
 
-import {isWellKnown, getLabel} from '.'
+import { isWellKnown, getLabel } from '.'
 
 const names = [
   'iterator',
