@@ -1,6 +1,6 @@
 {
   "name": "well-known-symbols",
-  "version": "2.0.0",
+  "version": "3.0.0",
   "description": "Check whether a symbol is well-known",
   "main": "index.js",
   "types": "index.d.ts",
