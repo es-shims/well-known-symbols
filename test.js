@@ -1,6 +1,6 @@
-import test from 'ava'
+const test = require('ava')
 
-import {isWellKnown, getLabel} from '.'
+const { isWellKnown, getLabel } = require('.')
 
 const names = [
   'iterator',
