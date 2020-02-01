@@ -2,8 +2,7 @@
 
 Check whether a symbol is [well-known](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Symbol#Well-known_symbols).
 
-Requires Node.js 6 or above. Note that not all Node.js versions support the same
-well-known symbols.
+Requires Node.js 10 or above. Note that not all Node.js versions support the same well-known symbols.
 
 ## Installation
 

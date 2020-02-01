@@ -7,7 +7,7 @@
     "index.js"
   ],
   "engines": {
-    "node": ">=6"
+    "node": ">=10"
   },
   "scripts": {
     "test": "standard && nyc ava"
@@ -33,7 +33,6 @@
   "homepage": "https://github.com/novemberborn/well-known-symbols#readme",
   "devDependencies": {
     "ava": "^3.1.0",
-    "codecov": "^3.1.0",
     "nyc": "^15.0.0",
     "standard": "^14.3.1"
   },
