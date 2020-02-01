@@ -5,6 +5,7 @@ const WELL_KNOWN = new Map([
   [Symbol.iterator, 'Symbol.iterator'],
   [Symbol.asyncIterator, 'Symbol.asyncIterator'],
   [Symbol.match, 'Symbol.match'],
+  [Symbol.matchAll, 'Symbol.matchAll'],
   [Symbol.replace, 'Symbol.replace'],
   [Symbol.search, 'Symbol.search'],
   [Symbol.split, 'Symbol.split'],
