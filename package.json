@@ -10,8 +10,7 @@
     "node": ">=6"
   },
   "scripts": {
-    "lint": "as-i-preach",
-    "test": "npm -s run lint && nyc ava"
+    "test": "standard && nyc ava"
   },
   "repository": {
     "type": "git",
@@ -33,10 +32,10 @@
   },
   "homepage": "https://github.com/novemberborn/well-known-symbols#readme",
   "devDependencies": {
-    "@novemberborn/as-i-preach": "^11.0.0",
     "ava": "1.0.0-beta.8",
     "codecov": "^3.1.0",
-    "nyc": "^13.0.1"
+    "nyc": "^13.0.1",
+    "standard": "^14.3.1"
   },
   "nyc": {
     "reporter": [
@@ -44,6 +43,5 @@
       "lcov",
       "text"
     ]
-  },
-  "standard-engine": "@novemberborn/as-i-preach"
+  }
 }
