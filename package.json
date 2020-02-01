@@ -12,7 +12,7 @@
     "node": ">=10"
   },
   "scripts": {
-    "test": "standard && nyc ava"
+    "test": "standard && tsd && nyc ava"
   },
   "repository": {
     "type": "git",
@@ -39,7 +39,8 @@
   "devDependencies": {
     "ava": "^3.1.0",
     "nyc": "^15.0.0",
-    "standard": "^14.3.1"
+    "standard": "^14.3.1",
+    "tsd": "^0.11.0"
   },
   "nyc": {
     "reporter": [
