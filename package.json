@@ -1,52 +1,168 @@
 {
-  "name": "well-known-symbols",
-  "version": "3.0.0",
-  "description": "Check whether a symbol is well-known",
-  "main": "index.js",
-  "types": "index.d.ts",
-  "files": [
-    "index.js",
-    "index.d.ts"
-  ],
-  "engines": {
-    "node": ">=10"
-  },
-  "scripts": {
-    "test": "standard && tsd && nyc ava"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/novemberborn/well-known-symbols.git"
-  },
-  "keywords": [
-    "symbols",
-    "es6",
-    "es7",
-    "es8",
-    "es2015",
-    "es2016",
-    "es2017",
-    "es2018",
-    "es2019",
-    "es2020"
-  ],
-  "author": "Mark Wubben (https://novemberborn.net/)",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/novemberborn/well-known-symbols/issues"
-  },
-  "homepage": "https://github.com/novemberborn/well-known-symbols#readme",
-  "devDependencies": {
-    "ava": "^3.1.0",
-    "nyc": "^15.0.0",
-    "standard": "^14.3.1",
-    "tsd": "^0.11.0"
-  },
-  "nyc": {
-    "reporter": [
-      "html",
-      "lcov",
-      "text"
-    ]
-  }
+	"name": "well-known-symbols",
+	"version": "3.0.0",
+	"description": "An ESnext spec-compliant shim/polyfill/replacement for all Well-Known Symbols that works in any environment with Symbols.",
+	"main": "index.json",
+	"exports": {
+		".": "./index.json",
+		"./auto": "./auto.js",
+		"./shim": "./shim.js",
+		"./Symbol.asyncIterator": "./Symbol.asyncIterator/index.js",
+		"./Symbol.asyncIterator/auto": "./Symbol.asyncIterator/auto.js",
+		"./Symbol.asyncIterator/polyfill": "./Symbol.asyncIterator/polyfill.js",
+		"./Symbol.asyncIterator/implementation": "./Symbol.asyncIterator/implementation.js",
+		"./Symbol.asyncIterator/shim": "./Symbol.asyncIterator/shim.js",
+		"./Symbol.hasInstance": "./Symbol.hasInstance/index.js",
+		"./Symbol.hasInstance/auto": "./Symbol.hasInstance/auto.js",
+		"./Symbol.hasInstance/polyfill": "./Symbol.hasInstance/polyfill.js",
+		"./Symbol.hasInstance/implementation": "./Symbol.hasInstance/implementation.js",
+		"./Symbol.hasInstance/shim": "./Symbol.hasInstance/shim.js",
+		"./Symbol.isConcatSpreadable": "./Symbol.isConcatSpreadable/index.js",
+		"./Symbol.isConcatSpreadable/auto": "./Symbol.isConcatSpreadable/auto.js",
+		"./Symbol.isConcatSpreadable/polyfill": "./Symbol.isConcatSpreadable/polyfill.js",
+		"./Symbol.isConcatSpreadable/implementation": "./Symbol.isConcatSpreadable/implementation.js",
+		"./Symbol.isConcatSpreadable/shim": "./Symbol.isConcatSpreadable/shim.js",
+		"./Symbol.iterator": "./Symbol.iterator/index.js",
+		"./Symbol.iterator/auto": "./Symbol.iterator/auto.js",
+		"./Symbol.iterator/polyfill": "./Symbol.iterator/polyfill.js",
+		"./Symbol.iterator/implementation": "./Symbol.iterator/implementation.js",
+		"./Symbol.iterator/shim": "./Symbol.iterator/shim.js",
+		"./Symbol.match": "./Symbol.match/index.js",
+		"./Symbol.match/auto": "./Symbol.match/auto.js",
+		"./Symbol.match/polyfill": "./Symbol.match/polyfill.js",
+		"./Symbol.match/implementation": "./Symbol.match/implementation.js",
+		"./Symbol.match/shim": "./Symbol.match/shim.js",
+		"./Symbol.matchAll": "./Symbol.matchAll/index.js",
+		"./Symbol.matchAll/auto": "./Symbol.matchAll/auto.js",
+		"./Symbol.matchAll/polyfill": "./Symbol.matchAll/polyfill.js",
+		"./Symbol.matchAll/implementation": "./Symbol.matchAll/implementation.js",
+		"./Symbol.matchAll/shim": "./Symbol.matchAll/shim.js",
+		"./Symbol.replace": "./Symbol.replace/index.js",
+		"./Symbol.replace/auto": "./Symbol.replace/auto.js",
+		"./Symbol.replace/polyfill": "./Symbol.replace/polyfill.js",
+		"./Symbol.replace/implementation": "./Symbol.replace/implementation.js",
+		"./Symbol.replace/shim": "./Symbol.replace/shim.js",
+		"./Symbol.search": "./Symbol.search/index.js",
+		"./Symbol.search/auto": "./Symbol.search/auto.js",
+		"./Symbol.search/polyfill": "./Symbol.search/polyfill.js",
+		"./Symbol.search/implementation": "./Symbol.search/implementation.js",
+		"./Symbol.search/shim": "./Symbol.search/shim.js",
+		"./Symbol.species": "./Symbol.species/index.js",
+		"./Symbol.species/auto": "./Symbol.species/auto.js",
+		"./Symbol.species/polyfill": "./Symbol.species/polyfill.js",
+		"./Symbol.species/implementation": "./Symbol.species/implementation.js",
+		"./Symbol.species/shim": "./Symbol.species/shim.js",
+		"./Symbol.split": "./Symbol.split/index.js",
+		"./Symbol.split/auto": "./Symbol.split/auto.js",
+		"./Symbol.split/polyfill": "./Symbol.split/polyfill.js",
+		"./Symbol.split/implementation": "./Symbol.split/implementation.js",
+		"./Symbol.split/shim": "./Symbol.split/shim.js",
+		"./Symbol.toPrimitive": "./Symbol.toPrimitive/index.js",
+		"./Symbol.toPrimitive/auto": "./Symbol.toPrimitive/auto.js",
+		"./Symbol.toPrimitive/polyfill": "./Symbol.toPrimitive/polyfill.js",
+		"./Symbol.toPrimitive/implementation": "./Symbol.toPrimitive/implementation.js",
+		"./Symbol.toPrimitive/shim": "./Symbol.toPrimitive/shim.js",
+		"./Symbol.toStringTag": "./Symbol.toStringTag/index.js",
+		"./Symbol.toStringTag/auto": "./Symbol.toStringTag/auto.js",
+		"./Symbol.toStringTag/polyfill": "./Symbol.toStringTag/polyfill.js",
+		"./Symbol.toStringTag/implementation": "./Symbol.toStringTag/implementation.js",
+		"./Symbol.toStringTag/shim": "./Symbol.toStringTag/shim.js",
+		"./Symbol.unscopables": "./Symbol.unscopables/index.js",
+		"./Symbol.unscopables/auto": "./Symbol.unscopables/auto.js",
+		"./Symbol.unscopables/polyfill": "./Symbol.unscopables/polyfill.js",
+		"./Symbol.unscopables/implementation": "./Symbol.unscopables/implementation.js",
+		"./Symbol.unscopables/shim": "./Symbol.unscopables/shim.js",
+		"./package.json": "./package.json"
+	},
+	"scripts": {
+		"prepack": "npmignore --auto --commentLines=autogenerated",
+		"version": "auto-changelog && git add CHANGELOG.md",
+		"postversion": "auto-changelog && git add CHANGELOG.md && git commit --no-edit --amend && git tag -f \"v$(node -e \"console.log(require('./package.json').version)\")\"",
+		"postlint": "es-shim-api --multi --bound",
+		"lint": "eslint --ext=js,mjs .",
+		"pretest": "npm run lint",
+		"tests-only": "nyc tape 'test/**/*.js'",
+		"test": "npm run tests-only",
+		"posttest": "aud --production"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/es-shims/well-known-symbols.git"
+	},
+	"keywords": [
+		"javascript",
+		"ecmascript",
+		"polyfill",
+		"shim",
+		"well-known",
+		"symbol",
+		"Symbol.asyncIterator",
+		"asyncIterator",
+		"Symbol.hasInstance",
+		"hasInstance",
+		"Symbol.isConcatSpreadable",
+		"isConcatSpreadable",
+		"Symbol.iterator",
+		"iterator",
+		"Symbol.match",
+		"match",
+		"Symbol.matchAll",
+		"matchAll",
+		"Symbol.replace",
+		"replace",
+		"Symbol.search",
+		"search",
+		"Symbol.species",
+		"species",
+		"Symbol.split",
+		"split",
+		"Symbol.toPrimitive",
+		"toPrimitive",
+		"Symbol.toStringTag",
+		"toStringTag",
+		"Symbol.unscopables",
+		"unscopables"
+	],
+	"author": "Jordan Harband <ljharb@gmail.com>",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/es-shims/well-known-symbols/issues"
+	},
+	"homepage": "https://github.com/es-shims/well-known-symbols#readme",
+	"dependencies": {
+		"get-intrinsic": "^1.2.0",
+		"has-symbols": "^1.0.3"
+	},
+	"devDependencies": {
+		"@es-shims/api": "^2.3.1",
+		"@ljharb/eslint-config": "^21.0.1",
+		"aud": "^2.0.2",
+		"auto-changelog": "^2.4.0",
+		"eslint": "=8.8.0",
+		"for-each": "^0.3.3",
+		"in-publish": "^2.0.1",
+		"is-registered-symbol": "^1.0.1",
+		"is-symbol": "^1.0.4",
+		"is-well-known-symbol": "^1.0.1",
+		"npmignore": "^0.3.0",
+		"nyc": "^10.3.2",
+		"safe-publish-latest": "^2.0.0",
+		"tape": "^5.6.3"
+	},
+	"auto-changelog": {
+		"output": "CHANGELOG.md",
+		"template": "keepachangelog",
+		"unreleased": false,
+		"commitLimit": false,
+		"backfillLimit": false,
+		"hideCredit": true
+	},
+	"testling": {
+		"files": "./test/index.js"
+	},
+	"publishConfig": {
+		"ignore": [
+			".github/workflows"
+		]
+	}
 }

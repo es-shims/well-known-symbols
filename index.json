@@ -1,0 +1,15 @@
+[
+	"Symbol.asyncIterator",
+	"Symbol.hasInstance",
+	"Symbol.isConcatSpreadable",
+	"Symbol.iterator",
+	"Symbol.match",
+	"Symbol.matchAll",
+	"Symbol.replace",
+	"Symbol.search",
+	"Symbol.species",
+	"Symbol.split",
+	"Symbol.toPrimitive",
+	"Symbol.toStringTag",
+	"Symbol.unscopables"
+]
