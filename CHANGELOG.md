@@ -5,6 +5,12 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [v4.0.0](https://github.com/es-shims/well-known-symbols/compare/v3.0.0...v4.0.0) - 2023-03-07
+
+### Commits
+
+- [Breaking] reimplementation as a "multi" es-shim [`49d95db`](https://github.com/es-shims/well-known-symbols/commit/49d95db1705f8d23ca369f74ddb6b5481eecc039)
+
 ## [v3.0.0](https://github.com/es-shims/well-known-symbols/compare/v2.0.0...v3.0.0) - 2020-02-01
 
 ### Commits
