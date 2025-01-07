@@ -132,8 +132,8 @@
 	},
 	"homepage": "https://github.com/es-shims/well-known-symbols#readme",
 	"dependencies": {
-		"get-intrinsic": "^1.2.0",
-		"has-symbols": "^1.0.3"
+		"get-intrinsic": "^1.2.7",
+		"has-symbols": "^1.1.0"
 	},
 	"devDependencies": {
 		"@es-shims/api": "^3.0.2",
