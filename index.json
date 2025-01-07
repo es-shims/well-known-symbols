@@ -11,5 +11,7 @@
 	"Symbol.split",
 	"Symbol.toPrimitive",
 	"Symbol.toStringTag",
-	"Symbol.unscopables"
+	"Symbol.unscopables",
+	"Symbol.asyncDispose",
+	"Symbol.dispose"
 ]

@@ -13,6 +13,8 @@ var shimSplit = require('./Symbol.split/shim');
 var shimToPrimitive = require('./Symbol.toPrimitive/shim');
 var shimToStringTag = require('./Symbol.toStringTag/shim');
 var shimUnscopables = require('./Symbol.unscopables/shim');
+var shimDispose = require('./Symbol.dispose/shim');
+var shimAsyncDispose = require('./Symbol.asyncDispose/shim');
 
 module.exports = function shim() {
 	shimAsyncIterator();
@@ -28,4 +30,6 @@ module.exports = function shim() {
 	shimToPrimitive();
 	shimToStringTag();
 	shimUnscopables();
+	shimDispose();
+	shimAsyncDispose();
 };

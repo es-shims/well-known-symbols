@@ -9,7 +9,7 @@ var runTests = require('./tests');
 
 test('shims', function (t) {
 	t.deepEqual(
-		shims,
+		shims.sort(),
 		[
 			'Symbol.asyncIterator',
 			'Symbol.hasInstance',
@@ -23,8 +23,10 @@ test('shims', function (t) {
 			'Symbol.split',
 			'Symbol.toPrimitive',
 			'Symbol.toStringTag',
-			'Symbol.unscopables'
-		],
+			'Symbol.unscopables',
+			'Symbol.asyncDispose',
+			'Symbol.dispose'
+		].sort(),
 		'has expected shims'
 	);
 
