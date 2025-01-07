@@ -1,6 +1,6 @@
 {
 	"name": "well-known-symbols",
-	"version": "4.0.0",
+	"version": "4.1.0",
 	"description": "An ESnext spec-compliant shim/polyfill/replacement for all Well-Known Symbols that works in any environment with Symbols.",
 	"main": "index.json",
 	"exports": {

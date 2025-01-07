@@ -5,6 +5,19 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [v4.1.0](https://github.com/es-shims/well-known-symbols/compare/v4.0.0...v4.1.0) - 2025-01-06
+
+### Commits
+
+- [New] add `Symbol.dispose`, `Symbol.asyncDispose` [`303b0a6`](https://github.com/es-shims/well-known-symbols/commit/303b0a68089c9bda4685c730dc9ee4d233b4136a)
+- [Dev Deps] update `@es-shims/api`, `@ljharb/eslint-config`, `auto-changelog`, `is-registered-symbol`, `is-symbol`, `is-well-known-symbol`, `npmignore`, `tape` [`7316942`](https://github.com/es-shims/well-known-symbols/commit/7316942336ae53d729fe4c050551560a4615790d)
+- [Deps] update `get-intrinsic`, `has-symbols` [`7f58dbd`](https://github.com/es-shims/well-known-symbols/commit/7f58dbdddd27cf98751d8336061727b5519bfb6c)
+- [Dev Deps] update `@es-shims/api` [`2e14122`](https://github.com/es-shims/well-known-symbols/commit/2e1412258e2d6f7fbca3614792347962f878eba3)
+- [meta] add missing `engines.node` [`c14741e`](https://github.com/es-shims/well-known-symbols/commit/c14741e533790043f9c35d0efb579f96e3627579)
+- [Tests] replace `aud` with `npm audit` [`828e18f`](https://github.com/es-shims/well-known-symbols/commit/828e18f63e414a9573cba6fec412519a818ef4c1)
+- [meta] add `prepublishOnly` script [`cbd7521`](https://github.com/es-shims/well-known-symbols/commit/cbd7521059f63470a98b43ebf37a0a471e7b6ab0)
+- [Dev Deps] add missing peer dep [`f178b97`](https://github.com/es-shims/well-known-symbols/commit/f178b9709a7c26c99dca6f2684f7d84bbe0ead9c)
+
 ## [v4.0.0](https://github.com/es-shims/well-known-symbols/compare/v3.0.0...v4.0.0) - 2023-03-07
 
 ### Commits
